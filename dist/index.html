@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tracalory | Meal & Calorie Tracker</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav>
+    <div class="nav-wrapper purple darken-4">
+      <div class="container">
+        <!--a href="#" class="brand-logo center">Tracalory</a-->
+        <img src="images/logo.png" class="brand-logo left" alt="togo Tracalorie">
+        <ul class="right">
+          <li><a href="#" class="clear-btn btn #8e24aa purple darken-1">Clear All</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <!-- Form Card -->
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Meal / Food Ingredients</span>
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" name="item-name" placeholder='Add Item' id="item-name">
+              <label for="item-name">Meal</label>
+            </div> <!-- .input-field col s6-->
+
+            <div class="input-field col s6">
+              <input type="number" name="item-calories" placeholder='Add calories' id="item-calories">
+              <label for="item-calories">Calories</label>
+            </div> <!-- .input-field col s6-->
+
+            <button class="add-btn btn teal accent-4"><i class="fa fa-plus"></i> Add Meal</button>
+
+
+            <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
+            <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Meal</button>
+
+
+            <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+
+          </div> <!-- .row-->
+        </form>
+      </div> <!-- .card-content-->
+    </div> <!-- .card-->
+
+    <!--Calories count-->
+    <h3 class="center-align">Total Calories: <span class="total-calories"> 0</span></h3>
+    <!--Ingredients list-->
+    <ul id="item-list" class="collection">
+    </ul>
+  </div> <!-- .container-->
+
+  <footer class="footer text-center">
+    <a href="https://github.com/FarahMint" target="_blank">
+      <i class="fab fa-github"></i></a>
+    FarahMint with <span><i class="fas fa-heart"></i></span></footer>
+
+
+
+
+
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "tracalorie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarahMint/tracalorie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarahMint/tracalorie/issues"
+  },
+  "homepage": "https://github.com/FarahMint/tracalorie",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
